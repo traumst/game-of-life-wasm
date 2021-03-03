@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Hello wasm-pack!</title>
+  <style>
+    #body {
+      position: relative;
+      display: flex;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #info {
+      position: relative;
+      display: flex;
+      top: 0%;
+      right: 0%;
+      width: 20%;
+      height: 10%;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div id="body">
+    <div id="info">
+      <div id="tick-num"></div>
+      <div id="frame-num"></div>
+      <button id="play-pause"></button>
+
+      <div id="ticks-per-frame-label"></div>
+      <input id="ticks-per-frame" type="range" />
+    </div>
+
+    <canvas id="game-of-life-canvas"></canvas>
+  </div>
+
+  <script src='./bootstrap.js'></script>
+</body>
+
+</html>
